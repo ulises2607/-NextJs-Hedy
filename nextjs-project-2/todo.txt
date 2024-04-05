@@ -1,0 +1,2 @@
+- Create main page with a backgroumd video
+- Create a div to display an scroll carousel.
