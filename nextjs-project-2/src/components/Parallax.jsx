@@ -2,14 +2,20 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useWindowSize } from '@studio-freight/hamo';
 
 const Parallax = ({className, children, speed=1, id="parallax"}) => {
   const trigger = useRef();
   const target = useRef();
   const timeline = useRef();
 
+  const {width: windowWidth} = useWindowSize();
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    const y = windowWidth * speed * 0.1;
+
+    const setY = gsap.quickSetter(target.current, "y", "px");
 
     timeline.current = gsap.timeline({
       scrollTrigger:{
@@ -17,19 +23,22 @@ const Parallax = ({className, children, speed=1, id="parallax"}) => {
         trigger: trigger.current,
         scrub: true,
         start: "top bottom",
-        end: "bottom top"
+        end: "bottom top",
+        onUpdate: (e) => {
+          setY(e.progress * y)
+        }
       }
     })
 
     return () => {
-      timeline?.current.kill()
+      timeline?.current?.kill()
     }
-  }, [id])
+  }, [id, speed, windowWidth])
 
   return (
     <div ref={trigger} className={className}>
       <div ref={target}>
-        children
+        {children}
       </div>
     </div>
   )

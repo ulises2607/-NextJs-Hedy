@@ -7,7 +7,7 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        className='absolute top-0 w-full object-cover'
+        className='w-full object-cover z-0 fixed'
         >
             <source src='/RN237-VideoDrone.mp4' />
         </video>

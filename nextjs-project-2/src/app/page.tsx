@@ -1,15 +1,20 @@
-import Image from "next/image";
-import Hero from "@/components/main/Hero";
-import Carousel from "@/components/main/Carousel";
-import ImageList from "@/components/ImageList";
+import React from 'react';
+import Image from 'next/image';
+import ImageList from '@/components/ImageList';
+import Hero from '@/components/main/Hero';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="h-full w-full">
+    <main className="relative h-screen">
       <Hero />
-      <div className="absolute bg-white h-[800px] w-[80%] right-[10%] top-[10%]">
-        <ImageList />
+
+      <div className="relative z-10 w-[75%] bg-black mx-auto my-auto">
+        <div className=" flex flex-col w-full items-center justify-center">
+          <ImageList />
+        </div>
       </div>
     </main>
   );
-}
+};
+
+export default Home;
