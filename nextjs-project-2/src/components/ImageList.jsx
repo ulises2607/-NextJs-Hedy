@@ -10,7 +10,7 @@ const ImageList = () => {
     
       <Image src={"https://picsum.photos/600/400?random=1"}alt="smooth scroll image" width={600} height={400}/>
       
-      <Parallax speed={-2} className={"self-end overflow-hidden"}>
+      <Parallax speed={-1} className={"self-end"}>
         <Image src={"https://picsum.photos/600/400?random=2"}alt="smooth scroll image" width={600} height={400}/>
       </Parallax>
 
