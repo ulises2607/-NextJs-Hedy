@@ -8,7 +8,7 @@ const ImageList = async () => {
   const data = await getData()
 
   data.map(d => {
-    console.log(d.url_imagen);
+    console.log(d.id);
   })
 
   return (
@@ -17,14 +17,14 @@ const ImageList = async () => {
     {data.map(d => (
       d.id % 3 === 1 ? (
         <Parallax speed={1} className={"self-start"}>
-          <Image src={d.url_imagen} alt="smooth scroll image" width={600} height={300}/>
+          <Image key={d.id} src={d.url_imagen} alt="smooth scroll image" width={600} height={300}/>
         </Parallax>
       ) : d.id % 3 === 0 ? (
         <Parallax speed={-2} className={"self-end"}>
-          <Image src={d.url_imagen} alt="smooth scroll image" width={600} height={500}/>
+          <Image key={d.id} src={d.url_imagen} alt="smooth scroll image" width={600} height={500}/>
         </Parallax>
       ) : (
-        <Image src={d.url_imagen} alt="smooth scroll image" width={700} height={400}/>
+        <Image key={d.id} src={d.url_imagen} alt="smooth scroll image" width={700} height={400}/>
       )
     ))}
     </>
