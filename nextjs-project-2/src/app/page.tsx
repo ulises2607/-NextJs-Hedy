@@ -8,7 +8,7 @@ const Home = () => {
     <main className="relative h-screen">
       <Hero />
 
-      <div className="relative z-10 w-[75%] bg-[#40402d] mx-auto my-auto">
+      <div className="relative z-10 w-[75%] bg-black mx-auto my-auto">
         <div className=" flex flex-col w-full items-center justify-center">
           <ImageList />
         </div>
