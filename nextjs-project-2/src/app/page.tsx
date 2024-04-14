@@ -4,7 +4,9 @@ import ImageList from '@/components/ImageList';
 import Hero from '@/components/main/Hero';
 
 const Home = () => {
+  
   return (
+    
     <main className="relative h-screen">
       <Hero />
 

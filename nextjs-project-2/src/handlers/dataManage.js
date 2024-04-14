@@ -8,4 +8,5 @@ async function getData() {
     return res.json()
 }
 
+
 export default getData;
