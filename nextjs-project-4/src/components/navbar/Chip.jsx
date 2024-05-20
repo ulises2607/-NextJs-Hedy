@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const Chip = ({ text, selected, setSelected }) => {
   return (
     <button
       onClick={() => setSelected(text)}
-      className={`${
+      className={`relative px-3 py-2 rounded-md transition-colors duration-300 ${
         selected
-          ? "text-white"
-          : "text-slate-300 hover:text-slate-200 hover:bg-slate-700"
-      } text-sm transition-colors px-2.5 py-0.5 rounded-md relative`}
+          ? "text-green-950 bg-gradient-to-r from-violet-600 to-indigo-600"
+          : "text-slate-300 hover:text-white hover:bg-slate-700"
+      }`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (

@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -7,46 +9,40 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import CommentCard from "../Comments/CommentCard";
+import Link from "next/link";
 
-const PostCard = ({ id, title, body }) => {
+const PostCard = ({ id, title, body, author, comments }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="border-b-2-50 p-5 m-2">
-      <Card className="w-[550px] m-2">
+    <div className="border-b-2 p-5 m-2 shadow-lg rounded-lg bg-white">
+      <Card className="w-[550px] m-2 bg-gray-50 hover:shadow-2xl transition-shadow duration-300">
         <CardHeader>
           <CardTitle>
-            {title} - ID: {id}
+            <Link
+              href={`/posts/${id}`}
+              className="text-blue-500 hover:underline"
+            >
+              {title}
+            </Link>
           </CardTitle>
-          <CardDescription>Created by Ulises</CardDescription>{" "}
+          <CardDescription className="text-gray-500">
+            Created by {author}
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <div>{body}</div>
-          <div>
-            <span>Comments quantity (1)</span>
+          <div className="text-gray-800">{body}</div>
+          <div className="mt-4">
+            <Button variant="outline" onClick={() => setIsOpen(!isOpen)}>
+              Comments
+            </Button>
+            {isOpen && <CommentCard postId={id} initialComments={comments} />}
           </div>
-        </CardContent>{" "}
+        </CardContent>
       </Card>
     </div>
   );
 };
 
 export default PostCard;
-
-// <Card className="w-[550px] m-2">
-//   <CardHeader>
-//     <CardTitle>
-//       {title} - ID: {id}
-//     </CardTitle>
-//     <CardDescription>Created by Ulises</CardDescription>
-//   </CardHeader>
-//   <CardContent>
-//     <div>{body}</div>
-//     <div>
-//       <span>Comments quantity (1)</span>
-//     </div>
-//   </CardContent>
-{
-  /* <CardFooter className="flex justify-between">
-        <Button variant="outline">Edit</Button>
-        <Button>Delete</Button>
-      </CardFooter> */
-}

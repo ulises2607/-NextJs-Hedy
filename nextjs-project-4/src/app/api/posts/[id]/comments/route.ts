@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  getComments,
-  addComment,
-  getPostById,
-} from "@/firebase/firebase_manage";
+import { getComments, addComment } from "@/firebase/firebase_manage";
 
 export async function GET(
   request: Request,
@@ -11,11 +7,10 @@ export async function GET(
 ) {
   const postId = params.id;
   try {
-    const post = await getPostById(postId);
     const comments = await getComments(postId);
-    return NextResponse.json({ ...post, comments });
+    return NextResponse.json({ comments });
   } catch (error) {
-    console.error("Error fetching post or comments:", error);
+    console.error("Error fetching comments:", error);
     return NextResponse.json(
       { error: (error as Error).message },
       { status: 500 }

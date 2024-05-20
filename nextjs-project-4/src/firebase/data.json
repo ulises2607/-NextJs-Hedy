@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Post 1",
+    "body": "This is the body of post 1",
+    "author": "John Doe",
+    "date": "2021-03-01",
+    "tags": ["tag1", "tag2"]
+  },
+  {
+    "title": "Post 2",
+    "body": "This is the body of post 2",
+    "author": "Jane Doe",
+    "date": "2021-03-05",
+    "tags": ["tag3", "tag4"]
+  },
+  {
+    "title": "Post 3",
+    "body": "This is the body of post 3",
+    "author": "Randy Random",
+    "date": "2021-03-10",
+    "tags": ["tag5", "tag6"]
+  }
+]
