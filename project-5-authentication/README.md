@@ -39,3 +39,12 @@ This project is an application built with Next.js 14 that requires users to log 
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
    ```
+
+2. **Set .env.local file**
+
+```
+NEXT_PUBLIC_SUPABASE_URL=https://nrvdpwnynfzxduhavksq.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ydmRwd255bmZ6eGR1aGF2a3NxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY0MDE3MjcsImV4cCI6MjAzMTk3NzcyN30.RDCvLpeYksFOv9CQD9fbzco4EYrM2iKw6aoCYR9Ytb8
+
+
+```
