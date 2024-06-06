@@ -28,6 +28,11 @@ const Header = async () => {
               <button className="bg-black text-white rounded-md p-3">
                 Sign Out
               </button>
+              <img
+                src={user.user_metadata?.avatar_url}
+                alt="User Icon"
+                className="w-8 h-8 rounded-full"
+              />
             </form>
           ) : (
             <Link className="bg-re p-3" href="/login">

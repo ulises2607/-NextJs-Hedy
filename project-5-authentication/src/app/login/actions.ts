@@ -53,7 +53,7 @@ export async function signOut() {
   await supabase.auth.signOut();
 
   revalidatePath("/", "layout");
-  redirect("/login");
+  redirect("/dashboard");
 }
 
 export async function oAuthSignIn(provider: Provider) {

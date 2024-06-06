@@ -1,0 +1,58 @@
+{
+  "title": "Interview Questions",
+  "Navbar": {
+    "title": "Boost your Interviews",
+    "rails": "Rails Questions",
+    "react": "React Questions"
+  },
+  "React": {
+    "title": "React Interview Questions",
+    "questions": {
+      "q1": {
+        "question": "1. What is React?",
+        "answer": "It is a very popular open-source JavaScript library for single-page web applications. It is useful when creating interactive and complex user interfaces for websites or mobile applications. React.js was released in 2015 and since then it has become one of the most reliable and used technologies in recent times. It has created one of the largest developer communities around it."
+      },
+      "q2": {
+        "question": "2. What is JSX?",
+        "answer": "JSX stands for JavaScript XML. It allows you to write HTML inside JavaScript and place them in the DOM without using functions like appendChild() or createElement()."
+      },
+      "q3": {
+        "question": "3. What are components in React?",
+        "answer": "Components are the building blocks of a React application's UI. These components split the UI into independent, reusable pieces that can be processed separately."
+      },
+      "q4": {
+        "question": "4. What are props in React?",
+        "answer": "Props are short for properties. They are read-only attributes used to pass data from one component to another. Props are always passed from parent to child components."
+      },
+      "q5": {
+        "question": "5. What is state in React?",
+        "answer": "State is an object that holds some information that may change over the lifetime of the component. State is managed within the component and can change over time, usually as a result of user actions."
+      }
+    }
+  },
+  "Rails": {
+    "title": "Rails Interview Questions",
+    "questions": {
+      "q1": {
+        "question": "1. What is Ruby on Rails?",
+        "answer": "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. It is a model-view-controller (MVC) framework, providing default structures for a database, a web service, and web pages."
+      },
+      "q2": {
+        "question": "2. What is MVC in Rails?",
+        "answer": "MVC stands for Model-View-Controller. It is a software design pattern that separates an application into three interconnected components: the Model, the View, and the Controller."
+      },
+      "q3": {
+        "question": "3. What are migrations in Rails?",
+        "answer": "Migrations are a feature of Active Record that allow you to evolve your database schema over time in a consistent and easy way."
+      },
+      "q4": {
+        "question": "4. What is Active Record in Rails?",
+        "answer": "Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic. Active Record facilitates the creation and use of business objects whose data requires persistent storage to a database."
+      },
+      "q5": {
+        "question": "5. How do you manage dependencies in Rails?",
+        "answer": "Rails uses Bundler to manage dependencies. Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed."
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Preguntas de Entrevista",
+  "Navbar": {
+    "title": "Boost your Interviews",
+    "rails": "Preguntas de Rails"
+  },
+  "React": {
+    "title": "Preguntas de Entrevista de React",
+    "questions": {
+      "q1": {
+        "question": "1. ¿Qué es React?",
+        "answer": "Es una biblioteca JavaScript de código abierto muy popular para aplicaciones web de una sola página. Es útil cuando se crean interfaces de usuario interactivas y complejas para sitios web o aplicaciones móviles. React.js se lanzó en 2015 y desde entonces se ha convertido en una de las tecnologías más fiables y utilizadas de los últimos tiempos. Ha creado una de las mayores comunidades de desarrolladores a su alrededor."
+      },
+      "q2": {
+        "question": "2. ¿Qué es JSX?",
+        "answer": "JSX significa JavaScript XML. Permite escribir HTML dentro de JavaScript y colocarlos en el DOM sin usar funciones como appendChild() o createElement()."
+      },
+      "q3": {
+        "question": "3. ¿Qué son los componentes en React?",
+        "answer": "Los componentes son los bloques de construcción de la interfaz de usuario de una aplicación React. Estos componentes dividen la interfaz de usuario en piezas independientes y reutilizables que se pueden procesar por separado."
+      },
+      "q4": {
+        "question": "4. ¿Qué son los props en React?",
+        "answer": "Props es la abreviatura de propiedades. Son atributos de solo lectura utilizados para pasar datos de un componente a otro. Los props siempre se pasan de componentes padres a hijos."
+      },
+      "q5": {
+        "question": "5. ¿Qué es el estado en React?",
+        "answer": "El estado es un objeto que contiene información que puede cambiar durante la vida útil del componente. El estado se gestiona dentro del componente y puede cambiar con el tiempo, generalmente como resultado de acciones del usuario."
+      }
+    }
+  },
+  "Rails": {
+    "title": "Preguntas de Entrevista de Rails",
+    "questions": {
+      "q1": {
+        "question": "1. ¿Qué es Ruby on Rails?",
+        "answer": "Ruby on Rails, o Rails, es un framework de aplicaciones web del lado del servidor escrito en Ruby bajo la Licencia MIT. Es un framework modelo-vista-controlador (MVC), que proporciona estructuras predeterminadas para una base de datos, un servicio web y páginas web."
+      },
+      "q2": {
+        "question": "2. ¿Qué es MVC en Rails?",
+        "answer": "MVC significa Model-View-Controller (Modelo-Vista-Controlador). Es un patrón de diseño de software que separa una aplicación en tres componentes interconectados: el Modelo, la Vista y el Controlador."
+      },
+      "q3": {
+        "question": "3. ¿Qué son las migraciones en Rails?",
+        "answer": "Las migraciones son una característica de Active Record que te permiten evolucionar el esquema de tu base de datos a lo largo del tiempo de una manera consistente y sencilla."
+      },
+      "q4": {
+        "question": "4. ¿Qué es Active Record en Rails?",
+        "answer": "Active Record es la M en MVC - el modelo - que es la capa del sistema responsable de representar los datos y la lógica empresarial. Active Record facilita la creación y el uso de objetos comerciales cuyos datos requieren almacenamiento persistente en una base de datos."
+      },
+      "q5": {
+        "question": "5. ¿Cómo gestionas las dependencias en Rails?",
+        "answer": "Rails utiliza Bundler para gestionar las dependencias. Bundler proporciona un entorno consistente para proyectos Ruby al rastrear e instalar los gems y versiones exactas que se necesitan."
+      }
+    }
+  }
+}
